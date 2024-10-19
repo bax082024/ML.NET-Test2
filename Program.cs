@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿public class EmailData
+{
+  public bool Label { get; set; }
+  public string EmailText { get; set; }
+}
+
