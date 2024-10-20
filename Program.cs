@@ -15,7 +15,7 @@ class Program
         // Load data from CSV file
         IDataView dataView = mlContext.Data.LoadFromTextFile<EmailData>(dataPath, separatorChar: ',', hasHeader: true);
 
-        // Split data into training (50%) and testing (50%) sets to ensure enough samples for both classes
+        // Split data into training (50%) and testing (50%). hopefully better result 
         var splitData = mlContext.Data.TrainTestSplit(dataView, testFraction: 0.5);
 
         // Define the pipeline
